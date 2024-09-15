@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <h1>Máy tính để tính khoảng cách 2 ta💖</h1>
+    <style>
+        .calculator {
+            display: inline-block;
+            padding: 10px;
+            border: 1px solid black;
+        }
+        .calculator input {
+            width: 100%;
+            height: 40px;
+            text-align: right;
+            margin-bottom: 10px;
+        }
+        .calculator button {
+            width: 50px;
+            height: 50px;
+            margin: 2px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="calculator">
+    <input id="display" readonly type="text" placeholder="Nhập số">
+    <div>
+        <button class="radian" onclick="appendToDisplay('rad')">Rad</button>
+        <button class="heart" onclick="appendToDisplay('💗')">💗</button>
+        <button class="factorial" onclick="appendToDisplay('!')">x!</button>
+        <button class="parenthesis" onclick="appendToDisplay('(')">(</button>
+        <button class="parenthesis" onclick="appendToDisplay(')')">)</button>
+        <button class="percent" onclick="appendToDisplay('%')">%</button>
+        <button onclick="clearDisplay()">AC</button>
+    </div>
+    <div>
+        <button class="reverse" onclick="appendToDisplay('inv')">Inv</button>
+        <button class="sine" onclick="appendToDisplay('sin')">sin</button>
+        <button class="logarithm" onclick="appendToDisplay('ln')">In</button>
+        <button onclick="appendNumber('7')">7</button>
+        <button onclick="appendNumber('8')">8</button>
+        <button onclick="appendNumber('9')">9</button>
+        <button onclick="appendOperator('/')">/</button>
+    </div>
+    <div>
+        <button class="PI" onclick="appendToDisplay('π')">π</button>
+        <button class="cosine" onclick="appendToDisplay('cos')">cos</button>
+        <button class="logarithm" onclick="appendToDisplay('log')">log</button>
+        <button onclick="appendNumber('4')">4</button>
+        <button onclick="appendNumber('5')">5</button>
+        <button onclick="appendNumber('6')">6</button>
+        <button onclick="appendOperator('*')">x</button>
+    </div>
+    <div>
+        <button class="euler" onclick="appendToDisplay('e')">e</button>
+        <button class="tangent" onclick="appendToDisplay('tan')">tan</button>
+        <button class="tick" onclick="appendToDisplay('√')">&#10003</button>
+        <button onclick="appendNumber('1')">1</button>
+        <button onclick="appendNumber('2')">2</button>
+        <button onclick="appendNumber('3')">3</button>
+        <button onclick="appendOperator('-')">-</button>
+    </div>
+    <div>
+        <button class="answer" onclick="appendToDisplay('ans')">Ans</button>
+        <button class="exponential.function" onclick="appendToDisplay('exp')">EXP</button>
+        <button class="operator" onclick="appendOperator('^2')">^2</button>
+        <button onclick="appendToDisplay('0')">0</button>
+        <button onclick="appendOperator('.')">.</button>
+        <button class="operator" onclick="calculateResult()">=</button>
+        <button onclick="appendOperator('+')">+</button>
+    </div>
+</div>
+<script src="Calculator.js"></script>
+</body>
+</html>
